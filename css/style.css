@@ -243,7 +243,8 @@ ul {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 16px;
-  margin: 10px auto;
+  margin: 0 auto 10px;
+  background: linear-gradient(#ff3b3b, #6600cc);
 }
 
 .download-button {
@@ -261,6 +262,11 @@ ul {
   color: white;
 
   margin: auto;
+}
+
+.download-button:hover,
+.download-button:focus {
+  background: linear-gradient(135deg, #c43f3f 0%, rgb(53, 12, 95) 100%);
 }
 
 .download-box .download-title,
@@ -284,7 +290,7 @@ ul {
   padding: 12px;
 
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #3e7bfa 0%, #60c 100%);
 }
 
 .contact-box h2 {
@@ -309,6 +315,11 @@ ul {
   color: white;
 }
 
+.contact-button:hover,
+.contact-button:focus {
+  background: linear-gradient(135deg, #2a4c97 0%, rgb(56, 11, 100) 100%);
+}
+
 .transform {
   border: 1px dashed rgba(255, 255, 255, 0.6);
   max-width: 508px;
@@ -327,6 +338,13 @@ ul {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.32), 0 0 1px 0 rgba(0, 0, 0, 0.04);
   background: linear-gradient(135deg, #ff3b3b 0%, #60c 100%);
   border: none;
+
+  margin-top: 15px;
+}
+
+.order-button:hover,
+.order-button:focus {
+  background: linear-gradient(135deg, #a33636 0%, rgb(67, 11, 122) 100%);
 }
 
 .questions-block {
@@ -375,5 +393,10 @@ p {
 
   .download-box {
     flex-wrap: nowrap;
+     background: linear-gradient(#ff3b3b, #6600cc); 
+  }
+
+  .order-button {
+    margin-top: unset;
   }
 }
